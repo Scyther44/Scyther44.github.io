@@ -1,0 +1,59 @@
+.section-heading {
+  margin-bottom: 0.8rem;
+}
+
+.section-heading h2 {
+  margin: 0.2rem 0 0;
+  font-size: 1.62rem;
+}
+
+.section-kicker {
+  margin: 0;
+  color: #1f4fd8;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.contact-copy p {
+  margin: 0;
+  color: #607089;
+  line-height: 1.6;
+}
+
+.contact-availability {
+  margin-top: 0.72rem !important;
+  font-weight: 700;
+  color: #07112d !important;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.detail-chip {
+  border-radius: 999px;
+  padding: 0.52rem 0.72rem;
+  background: #edf2ff;
+  color: #1f4fd8;
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}

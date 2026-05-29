@@ -1,0 +1,59 @@
+.about-shell {
+  display: grid;
+  grid-template-columns: 1.35fr 0.9fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.section-kicker {
+  margin: 0;
+  color: #1f4fd8;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.about-copy h2 {
+  margin: 0.35rem 0 0.7rem;
+  font-size: 1.68rem;
+  line-height: 1.2;
+  color: #07112d;
+}
+
+.about-copy p {
+  margin: 0 0 0.9rem;
+  color: #607089;
+  line-height: 1.6;
+}
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.highlight-card {
+  background: linear-gradient(180deg, #f6f8ff 0%, #edf2ff 100%);
+  border: 1px solid rgba(63, 89, 165, 0.2);
+  border-radius: 18px;
+  padding: 0.95rem 1rem;
+}
+
+.highlight-card h3 {
+  margin: 0;
+  color: #07112d;
+  font-size: 1rem;
+}
+
+.highlight-card p {
+  margin: 0.35rem 0 0;
+  color: #607089;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .about-shell {
+    grid-template-columns: 1fr;
+  }
+}
