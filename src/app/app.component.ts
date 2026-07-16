@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent, type SectionKey } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
@@ -26,4 +26,9 @@ import { ContactComponent } from './components/contact/contact.component';
 })
 export class AppComponent {
   title = 'portfolio';
+  activeSection: SectionKey = 'about';
+
+  selectSection(section: SectionKey): void {
+    this.activeSection = section;
+  }
 }

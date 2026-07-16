@@ -50,7 +50,7 @@
   margin-left: auto;
 }
 
-.site-header nav a {
+.site-header nav button {
   color: white;
   text-decoration: none;
   padding: 0.48rem 0.7rem;
@@ -59,9 +59,13 @@
   font-weight: 600;
   background: rgba(255, 255, 255, 0.08);
   transition: all 0.2s ease;
+  border: 0;
+  cursor: pointer;
+  line-height: 1;
 }
 
-.site-header nav a:hover {
+.site-header nav button:hover,
+.site-header nav button.is-active {
   background: rgba(120, 160, 255, 0.24);
   transform: translateY(-1px);
 }
@@ -84,7 +88,7 @@
     margin-left: 0;
   }
 
-  .site-header nav a {
+  .site-header nav button {
     flex: 1 1 calc(50% - 0.5rem);
     text-align: center;
   }
