@@ -9,7 +9,11 @@ import { Component } from '@angular/core';
 export class HobbiesComponent {
 
   goFullscreen(): void {
-    const iframe = document.getElementById('godot-game') as HTMLIFrameElement;
+    const iframe = document.getElementById('godot-game');
+
+    if (!(iframe instanceof HTMLIFrameElement)) {
+      return;
+    }
 
     if (iframe.requestFullscreen) {
       iframe.requestFullscreen();
